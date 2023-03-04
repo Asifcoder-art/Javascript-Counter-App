@@ -1,0 +1,62 @@
+main{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+   
+}
+
+.counter{
+    text-align: center;
+}
+
+.decrement{
+    background-color: #ff0000;
+    padding: 10px 20px;
+    color: #fff;
+
+}
+
+
+.reset{
+    margin-top: 10px;
+    background-color: #ffff00
+}
+
+.displayNumber{
+    padding: 5px 8px;
+    border: 2px solid black;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+/* hover */
+.decrement:hover{
+    background-color: #EB2026;
+    border: 5px solid black;
+    font-size: 15px;
+}
+
+.increment{
+    background-color: #008000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.increment:hover{
+    background: #478458;
+    border: 5px solid black;
+    font-size: 15px;
+
+}
+
+.reset:hover{
+    background-color: #F6DA62;
+    border: 1px solid black;
+    font-size: 15px;
+
+}
