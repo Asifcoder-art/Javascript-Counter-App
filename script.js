@@ -43,3 +43,29 @@ reset.addEventListener("click",()=>{
     displayNumber.innerHTML = value;
    
 });
+
+//  with for each method
+
+let value = 0;
+const display = document.querySelector(".displayNumber")
+const btns = document.querySelectorAll(".btn")
+btns.forEach(function(btn){
+    btn.addEventListener("click",function(e){
+        const styles = e.currentTarget.classList;
+        if(styles.contains('decrement')){
+            value--
+        }else if(styles.contains('increment')){
+            value++
+        }else {
+            value = 0
+        }
+        if(value>0){
+            display.style.color = 'green'
+        }else if(value<0){
+            display.style.color = "red"
+        }else{
+            display.style.color = "black"
+        }
+        display.textContent = value
+    })
+})
